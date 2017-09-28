@@ -144,6 +144,6 @@
         {"name": "laravel24",
           "type": "org"},
 
-        {"name": "spatie",
-          "type": "org"}
+        // {"name": "spatie",
+        //   "type": "org"}
     ];
