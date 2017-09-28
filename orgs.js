@@ -145,6 +145,6 @@
 //           "type": "org"},
 //         {"name": "IBMResilient",
 //           "type": "org"},
-        {"name": "laravel24",
+        {"name": "spatie",
           "type": "org"}
     ];
