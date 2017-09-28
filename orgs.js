@@ -146,5 +146,5 @@
         // {"name": "backup-manager",
         //   "type": "org"},
         {"name": "laravel24",
-          "type": "users"}
+          "type": "repos"}
     ];
