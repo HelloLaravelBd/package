@@ -211,8 +211,7 @@ ga('send', 'pageview');
        	  console.log('** Unknown type “'+orgs.type+'” for org “'+org+'” — check “orgs.js” for typo.');
        	  return;
        }
-      //  var uri = "https://api.github.com/"+orgs.type+"s/"+org + reposcmd
-			 var uri = "https://api.github.com/users/laravel24/repos"
+       var uri = "https://api.github.com/"+orgs.type+"s/"+org + reposcmd
        + "?per_page=1000"
        + "&client_id=1bafa09b6086eec7afb4"
        + "&client_secret=7e6422a0a2e24f0d0ecb7521a63990b5758c9cc8";
