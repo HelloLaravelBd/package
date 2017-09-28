@@ -232,11 +232,13 @@ ga('send', 'pageview');
             });
 
             // remove forks from the view
-            $.each(forks, function(i, forkindex) {
-              var indextoremove = forkindex - i; // account for prior splices
-              if(DEBUG) console.log('removing forked entry: ' + repos[indextoremove].full_name);
-              repos.splice(indextoremove,1);
-            });
+						
+            // $.each(forks, function(i, forkindex) {
+            //   var indextoremove = forkindex - i; // account for prior splices
+            //   if(DEBUG) console.log('removing forked entry: ' + repos[indextoremove].full_name);
+            //   repos.splice(indextoremove,1);
+            // });
+
 
 		// pre sort by how recently the repo was modified
         repos.sort(function (a, b) {
