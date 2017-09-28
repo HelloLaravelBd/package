@@ -143,8 +143,7 @@
 //           "type": "org"},
 //         {"name": "IBM-ATAT",
 //           "type": "org"},
-        {"name": "backup-manager",
-          "type": "org"},
-        {"name": "laravel24",
+    
+        {"name": "spatie",
           "type": "org"}
     ];
