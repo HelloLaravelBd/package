@@ -147,7 +147,7 @@ font-family: Helvetica, Arial, Tahoma, sans-serif;
     top: 0;
     color: #aaa;
     height: 30px;
-    /*background: transparent url(../images/arrow-up.png) no-repeat 0 0;*/
+    background: red url(../images/arrow-up.png) no-repeat 0 0;
 }
 .collapse+a.twistie.showdetails:before
 {
