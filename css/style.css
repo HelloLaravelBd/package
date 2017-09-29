@@ -143,11 +143,12 @@ font-family: Helvetica, Arial, Tahoma, sans-serif;
     content:'';
     width: 70px;
     padding-left: 20px;
+		margin-left: -30px;
     position: absolute;
     top: 0;
     color: #aaa;
     height: 30px;
-    background: red url(../images/arrow-up.png) no-repeat 0 0;
+    background: transparent url(../images/arrow-up.png) no-repeat 0 0;
 }
 .collapse+a.twistie.showdetails:before
 {
@@ -156,7 +157,7 @@ font-family: Helvetica, Arial, Tahoma, sans-serif;
     position: absolute;
     top: 0;
     color: #aaa;
-    /*background: transparent url(../images/arrow-dwn.png) no-repeat 0 0;*/
+    background: transparent url(../images/arrow-dwn.png) no-repeat 0 0;
     width: 70px;
     height: 30px;
 }
