@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 
 <html lang="en"><head>
-<script src="//cdn.optimizely.com/js/1141215513.js"></script>
+<!-- <script src="//cdn.optimizely.com/js/1141215513.js"></script> -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="laravel package house , search here your desired package">
 <meta name="author" content="@code4mk">
 
+<meta property="og:type" content="article">
+<meta property="og:title" content="Laravel package">
+<meta property="og:description" content="Laravel package house , search here your desired package">
+<meta property="og:image" content="images/l24.PNG">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Laravel package">
+<meta name="twitter:description" content="Laravel package house , search here your desired package">
+<meta name="twitter:image" content="/images/l24.PNG">
 
 <title>Package laravel</title>
 
@@ -42,12 +51,12 @@ ga('send', 'pageview');
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
     <div class="container">
-      <h1>Laravel { packages }</h1>
+      <h1>Laravel {{ packages }}</h1>
 
 
       <div class="leadspace-buttons">
         <a href="/" data-analytics-category="Leadspace buttons" data-analytics-action="JazzHub">
-          <p class="btn btn-primary btn-lg btn-custom-jazz">Search your desired packages<b>@code4mk</b>
+          <p class="btn btn-primary btn-lg btn-custom-jazz">All packages  forge , So go to owner </b>
           </p>
          </a>
 	     <!-- <a href="https://www.bluemix.net/" data-analytics-category="Leadspace buttons" data-analytics-action="BlueMix">
@@ -65,7 +74,7 @@ ga('send', 'pageview');
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
              <div id="wrapper">
-              <label for="search" class="col-lg-4 control-label search" style=""><span>Search</span> <input type="search" id="search" class="search-query span3 filter input-medium" placeholder="search Repos..."></label>
+              <label for="search" class="col-lg-4 control-label search" style=""><span>Search</span> <input type="search" id="search" class="search-query span3 filter input-medium" placeholder="search package..."></label>
 
               <div id="repos" class="columns collapse-group">
 
@@ -79,7 +88,7 @@ ga('send', 'pageview');
   </div>
   <footer>
     <div class="container">
-      <p>©2016 <span id="copyright-last-year">-2017</span>- <a href="https://twitter.com/code4mk">@code4mk</a></p>
+      <p>©Copyright <span id="copyright-last-year">-2017</span>- <a href="https://github.com/laravel24">laravel24</a></p>
     </div>
   </footer>
 </div> <!-- /container -->
@@ -123,7 +132,8 @@ ga('send', 'pageview');
           desc = repoDescription(repo);
           var $uitem = $("<div>").addClass("updated-card col-sm-5 col-md-4 col-lg-3");
           var $item = $("<div>").addClass("card pin " + (repo.language || '').toLowerCase() + " "+repo.name.toLowerCase());
-          var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
+					var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
+
           $link.append($("<h4>").text(repo.name));
           $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
           $item.append($("<p>").text(desc));
@@ -214,7 +224,7 @@ ga('send', 'pageview');
        	  return;
        }
        var uri = "https://api.github.com/"+orgs.type+"s/"+org + reposcmd
-       + "?per_page=1000"
+       + "?per_page=10000"
        + "&client_id=1bafa09b6086eec7afb4"
        + "&client_secret=7e6422a0a2e24f0d0ecb7521a63990b5758c9cc8";
        $.getJSON(uri, function (result) {

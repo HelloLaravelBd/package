@@ -34,9 +34,14 @@ src: url('/fonts/Lubalin/LubalinGraphStd-Medium.otf') format('opentype');
 
 .jumbotron
 {
-	background: #1b1f30 url(../images/pattern.png) repeat 0 0;
+	background: rgba(208, 77, 72, 0.87) url(../images/pattern.png) repeat 0 0;
 	color: #fff;
 	margin-bottom: 5px;
+}
+
+.navbar{
+	background: #24292e !important;
+	border-bottom: 4px solid rgba(208, 77, 72, 0.87);
 }
 
 .jumbotron h1
@@ -171,9 +176,9 @@ font-family: Helvetica, Arial, Tahoma, sans-serif;
 
 .btn-custom-jazz
 {
-	background-color: #1cba11;
+	background-color: rgba(0, 0, 0, 0.7);
 
-	border: 0;
+	border: 2px solid #9800a0;
 }
 
 .btn-custom-bm
@@ -274,6 +279,10 @@ background:url(../imgs/news.jpg) no-repeat;
 	margin: 5px 2px 5px 5px;
 	padding: 0px 2px 0px 0px;
 	text-overflow: ellipsis;
+	border: 2px solid black;
+}
+#wrapper .updated-card:hover{
+	border: 2px solid red;
 
 }
 
@@ -338,7 +347,8 @@ background:url(../imgs/news.jpg) no-repeat;
 
 .section-title
 {
-	background-color: #333;
+	background-color: rgba(208, 77, 72, 0.87);
+	border: 2px solid white;
 	text-transform: uppercase;
 	position: relative;
 	margin: 3px;
@@ -545,11 +555,15 @@ margin-right: -2px;
 	padding-bottom: 5px;
 	background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
 	opacity: 1;
+	border: 2px solid rgba(70, 74, 78, 0.9);
 
 	-webkit-transition: all .2s ease;
 	-moz-transition: all .2s ease;
 	-o-transition: all .2s ease;
 	transition: all .2s ease;
+}
+.pin:hover{
+	border: 2px solid red;
 }
 
 .pin img {

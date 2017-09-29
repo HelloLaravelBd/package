@@ -1,7 +1,7 @@
 
     var orgs = [
-//         {"name": "csync/TogetherStream",
-//          "type": "repo"},
+        // {"name": "csync/TogetherStream",
+        //  "type": "repo"},
 //         {"name": "bradleyjeck/epanetReader",
 //          "type": "repo"},
 //         {"name": "wasdev",
@@ -139,8 +139,8 @@
 //          "type": "org"},
 //         {"name": "personality-insights",
 //           "type": "org"},
-//         {"name": "zosconnect",
-//           "type": "org"},
+        {"name": "laravel24/whoops",
+          "type": "repo"},
         {"name": "laravel24",
-          "type": "org"},
+          "type": "user"},
     ];
